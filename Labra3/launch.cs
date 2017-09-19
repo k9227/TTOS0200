@@ -14,6 +14,8 @@ namespace Labra3
             //PesukoneDemo.TestaaPesukone();
             //VechileDemo.TestaaVechile();
             //TvDemo.TestaaTv();
+            //OpiskelijaDemo.TestaaOpiskelija();
+            PelikokoelmaDemo.TestaaPelikokoelma();
         }
     }
 }
