@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tehtävät", "Tehtävät", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra3", "Labra3\Labra3.csproj", "{918E6E34-0BB0-4F06-904A-E0F3ABF08F82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra4", "Labra4\Labra4.csproj", "{3EC3AA7E-5331-45B0-A160-C8BC2F623A76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{918E6E34-0BB0-4F06-904A-E0F3ABF08F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{918E6E34-0BB0-4F06-904A-E0F3ABF08F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{918E6E34-0BB0-4F06-904A-E0F3ABF08F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC3AA7E-5331-45B0-A160-C8BC2F623A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC3AA7E-5331-45B0-A160-C8BC2F623A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC3AA7E-5331-45B0-A160-C8BC2F623A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC3AA7E-5331-45B0-A160-C8BC2F623A76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +48,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E61D6E73-8CC1-4F27-9901-CA85B3BFB8BE} = {6E2CDF3A-6A84-4736-B900-63EC1BD73A0B}
 		{918E6E34-0BB0-4F06-904A-E0F3ABF08F82} = {6E2CDF3A-6A84-4736-B900-63EC1BD73A0B}
+		{3EC3AA7E-5331-45B0-A160-C8BC2F623A76} = {6E2CDF3A-6A84-4736-B900-63EC1BD73A0B}
 	EndGlobalSection
 EndGlobal
