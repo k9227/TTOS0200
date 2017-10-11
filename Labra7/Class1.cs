@@ -23,10 +23,60 @@ namespace Labra7
             kalle.Etunimi = "Kalle";kalle.Sukunimi="Ankka";kalle.AsioID = "K6789";
             opiskelijat.Add(kalle);
             //yhden opiskelijan tietojen näyttäminen
-            Console.WriteLine("Anna numero väliltä 1-5");
+            Console.WriteLine("Anna numero väliltä 1-{0}",opiskelijat.Count);
             int i = int.Parse(Console.ReadLine());
-            Console.WriteLine("MiniAsion {0} opiskelija on {1}", i, opiskelijat[i].ToString());
-
+            if (i-1 < opiskelijat.Count)
+                Console.WriteLine("MiniAsion {0} opiskelija on {1}", i, opiskelijat[i-1].ToString());
+            else
+                Console.WriteLine("MiniASIOssa on vain {0} opiskelijaa", opiskelijat.Count);
+            //kakkien opiskelijoiden tiedot
+            Console.WriteLine("\nMiniASIOn kaikki opiskelijat");
+            foreach(var o in opiskelijat)
+            {
+                Console.WriteLine(o.ToString());
+            }
+            //kaikkien opiskelijoiden tiedot aakkostettuna sukunimen mukaan
+            //sortataan oliot Sukunimi-ominaisuude mukaiseen järjestykseen
+            opiskelijat.Sort((x,y) => x.Sukunimi.CompareTo(y.Sukunimi));
+            Console.WriteLine("\nMiniASIOn kaikki opiskelijat aakkostettuna");
+            foreach (var o in opiskelijat)
+            {
+                Console.WriteLine(o.ToString());
+            }
+            //uuden opiskelijan lisääminen, HUOM tarkistetaan ettei AdioID ole jo olemassa
+            Console.WriteLine("Anna uuden opiskelijan AsioID");
+            string asioid = Console.ReadLine();
+            //tutkitaan onko listassa
+            bool lippu = false;
+            foreach (var o in opiskelijat)
+            {
+                if (asioid == o.AsioID)
+                {
+                    lippu = true;
+                    break;
+                }
+            }
+            if (lippu)
+            {
+                Console.WriteLine("AsioID {0} on jo käytössä", asioid);
+            }
+            else
+            {
+                Console.WriteLine("Anna etunimi");
+                string etunimi = Console.ReadLine();
+                Console.WriteLine("Anna sukunimi");
+                string sukunimi = Console.ReadLine();
+                Console.WriteLine("Anna ryhmä");
+                string ryhma = Console.ReadLine();
+                //luodaan uusi opiskelija
+                Opiskelija uusi = new Opiskelija(etunimi, sukunimi, asioid, ryhma);
+                opiskelijat.Add(uusi);
+                Console.WriteLine("\nMiniASIOn kaikki {0} opiskelijaa:",opiskelijat.Count);
+                foreach (var o in opiskelijat)
+                {
+                    Console.WriteLine(o.ToString());
+                }
+            }
         }
         static void Main(string[] args)
         {
