@@ -80,7 +80,9 @@ namespace Labra7
         }
         static void Main(string[] args)
         {
-            Testaa();
+            //Testaa();
+            //Tehtava2.TestCD();
+            Tehtava3.TetKortti();
         }
     }
 }

@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="CD.cs" />
+    <Compile Include="tehtava3.cs" />
+    <Compile Include="Tehtava4.cs" />
+    <Compile Include="TestaaMiniAsio.cs" />
+    <Compile Include="OpiskelijaMiniasio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
