@@ -82,7 +82,8 @@ namespace Labra7
         {
             //Testaa();
             //Tehtava2.TestCD();
-            Tehtava3.TetKortti();
+            //Tehtava3.TetKortti();
+            Tehtava4.TestSeura();
         }
     }
 }
