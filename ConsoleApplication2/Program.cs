@@ -13,6 +13,7 @@ namespace Labra9
             //Tehtava1.TestaaTehtava1();
             //Tehtava2.TestTehtava2();
             //Tehtava3.TestTehtava3();
+            Tehtava4.TestTehtava4();
             //Tehtava5.TestTehtava5();
         }
     }

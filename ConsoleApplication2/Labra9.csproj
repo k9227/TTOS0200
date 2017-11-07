@@ -48,6 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tehtava2.cs" />
     <Compile Include="Tehtava3.cs" />
+    <Compile Include="Tehtava4.cs" />
     <Compile Include="Tehtava5.cs" />
   </ItemGroup>
   <ItemGroup>
