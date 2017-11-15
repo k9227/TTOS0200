@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "labra10.2", "Labra10.2\labra10.2.csproj", "{099F1945-5258-4505-83A4-5D35BF69AD90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "labra10.3", "Labra10.3\labra10.3.csproj", "{40E673E2-33E3-4D2D-AE1A-635EBBBD8BDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFdemo2", "WPFdemo2\WPFdemo2.csproj", "{6861AD7D-8AF4-4512-98BB-4F6182108FF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,10 @@ Global
 		{40E673E2-33E3-4D2D-AE1A-635EBBBD8BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40E673E2-33E3-4D2D-AE1A-635EBBBD8BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40E673E2-33E3-4D2D-AE1A-635EBBBD8BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6861AD7D-8AF4-4512-98BB-4F6182108FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6861AD7D-8AF4-4512-98BB-4F6182108FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6861AD7D-8AF4-4512-98BB-4F6182108FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6861AD7D-8AF4-4512-98BB-4F6182108FF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
