@@ -29,6 +29,16 @@ namespace WPFdemo2
             NaytaKuva("autotalli.png");
             //pyydetään BL-kerrokselta autot, ja näytetään ne käyttäjälle
             autot = Autotalli.HaeAutot();
+            //asetettaan cmbAutot kaikki eri automerkit
+            /*V1:  käsin
+            List<string> merkit = new List<string>();
+            merkit.Add("Audi");
+            merkit.Add("Saab");
+            merkit.Add("Volvo");
+            merkit.Add("Toyota");*/
+            //V2: parempi, kysytään LINQ:lla datasta eri automerkit
+            var result = autot.Select(m => m.Merkki).Distinct();
+            cmbAutot.ItemsSource = result;
         }
 
         private void btnHaeAutot_Click(object sender, RoutedEventArgs e)
@@ -74,6 +84,14 @@ namespace WPFdemo2
         {
             //hakee vain AUdit
             var result = autot.Where(m => m.Merkki.Contains("Audi"));
+            dgAutot.ItemsSource = result;
+        }
+
+        private void cmbAutot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //suodatetaan käyttäjän valinnan mukaan
+            string merkki = cmbAutot.SelectedValue.ToString();
+            var result = autot.Where(m => m.Merkki.Contains(merkki));
             dgAutot.ItemsSource = result;
         }
     }
